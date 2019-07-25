@@ -1,0 +1,21 @@
+main {
+  height: 100%;
+  background-image: linear-gradient($light-grey, white);
+  padding: 30px 255px 0;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+    .grid-item {
+      background-color: white;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+
+      &:first-child {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+    }
+  }
+}

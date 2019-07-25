@@ -9,10 +9,10 @@ $dark-blue: #092331;
 $light-grey: #d9d9d9;
 
 html, body {
-  box-sizing: content-box;
-  font-family: 'Varela Round', sans-serif;
+  box-sizing: border-box;
   margin: 0;
   height: 100%;
 }
 
 @import 'header';
+@import 'main';
