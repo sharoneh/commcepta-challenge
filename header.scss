@@ -4,7 +4,11 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 120px;
-  padding: 0 255px;
+  padding: 0 $padding-horizontal-1920px;
+  
+  @media screen and (max-width: 1280px) {
+    padding: 0 $padding-horizontal-1280px;
+  }
   
   a {
     color: white;
@@ -17,7 +21,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid $dark-blue;
+    border: 5px solid $blue;
 
     div {
       width: 100%;
@@ -31,12 +35,12 @@ header {
 
       &:first-child {
         span {
-          color: $dark-blue;
+          color: $blue;
         }
       }
 
       &:last-child {
-        background-color: $dark-blue;
+        background-color: $blue;
 
         span {
           color: #3ca1a1;
