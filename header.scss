@@ -1,0 +1,54 @@
+header {
+  background-image: linear-gradient(to right, $light-green, $dark-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 0 255px;
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  div {
+    height: 66px;
+    width: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid $dark-blue;
+
+    div {
+      width: 100%;
+      border: none;
+
+      span {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 30px;
+      }
+
+      &:first-child {
+        span {
+          color: $dark-blue;
+        }
+      }
+
+      &:last-child {
+        background-color: $dark-blue;
+
+        span {
+          color: #3ca1a1;
+        }
+      }
+    }
+  }
+
+  nav {
+    a {
+      margin: 0 30px;
+      text-transform: uppercase;
+    }
+  }
+}

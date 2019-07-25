@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+$light-green: #4dd2d2;
+$dark-blue: #092331;
+$light-grey: #d9d9d9;
+
+html, body {
+  box-sizing: content-box;
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+@import 'header';

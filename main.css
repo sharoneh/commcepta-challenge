@@ -1,3 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+}
 
+html, body {
+  box-sizing: content-box;
+  font-family: "Varela Round", sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  background-image: linear-gradient(to right, #4dd2d2, #092331);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 0 255px;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+header div {
+  height: 66px;
+  width: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #092331;
+}
+header div div {
+  width: 100%;
+  border: none;
+}
+header div div span {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 30px;
+}
+header div div:first-child span {
+  color: #092331;
+}
+header div div:last-child {
+  background-color: #092331;
+}
+header div div:last-child span {
+  color: #3ca1a1;
+}
+header nav a {
+  margin: 0 30px;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=main.css.map */
