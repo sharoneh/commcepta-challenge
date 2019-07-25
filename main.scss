@@ -103,7 +103,7 @@ main {
       &.box {
         cursor: pointer;
 
-        &:hover {
+        &:hover, &.active {
           background-color: $blue;
           transition-duration: .5s;
 
