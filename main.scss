@@ -57,7 +57,8 @@ main {
       .image {
         height: 100px;
         width: 100px;
-        background-size: contain;
+        background-size: cover;
+        background-position: center center;
         border-radius: 50%;
 
         .number {

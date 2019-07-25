@@ -1,7 +1,7 @@
 [ 
   { 
     "id": 1,
-    "foto": "foto-alberto.jpg",
+    "foto": "foto-alberto.png",
     "nome": "Alberto",
     "cargo": "Presidente",
     "idade": 20 
@@ -50,7 +50,7 @@
   },
   { 
     "id": 8,
-    "foto": "foto-gustavo.jpg",
+    "foto": "foto-gustavo.png",
     "nome": "Gustavo",
     "cargo": "Desenvolvedor",
     "idade": 27
