@@ -13,15 +13,17 @@ main {
     grid-gap: 30px;
 
     .grid-item {
+      cursor: pointer;
       background-color: white;
       box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
       padding: 20px;
       align-items: center;
       display: flex;
 
-      &:first-child {
+      &.highlight-box {
         grid-column-start: 1;
         grid-column-end: 4;
+        cursor: default;
 
         div {
           display: flex;
@@ -82,11 +84,9 @@ main {
         margin-left: 30px;
         font-size: 12px;
         
-        &:first-child {
-          margin-left: 48px;
-        }
-
         span {
+          text-align: left;
+
           &.name {
             font-size: 20px;
             font-weight: 600;
@@ -96,6 +96,20 @@ main {
           &.position {
             font-size: 16px;
             color: $grey;
+          }
+        }
+      }
+
+      &.box {
+        cursor: pointer;
+
+        &:hover {
+          background-color: $blue;
+          transition-duration: .5s;
+
+          .content span {
+            color: white;
+            transition-duration: .5s;
           }
         }
       }
