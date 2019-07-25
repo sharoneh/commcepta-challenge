@@ -1,0 +1,17 @@
+{
+  "name": "space-box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch main.scss main.css",
+    "start": "open http://127.0.0.1:8080 && http-server"
+  },
+  "author": "Sharon Hasegawa",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "sass": "^1.22.8"
+  }
+}
