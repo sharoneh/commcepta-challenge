@@ -1,0 +1,39 @@
+main {
+  min-height: 100%;
+  background-image: linear-gradient($light-grey, white);
+  padding: 30px $padding-horizontal-1920px;
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+    @media screen and (max-width: 1010px) {
+      grid-gap: 20px;
+    }
+
+    @media screen and (max-width: 950px) {
+      grid-template-columns: 1fr;
+
+      .grid-item.highlight-box {
+        grid-column-end: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1480px) {
+    padding: 30px $padding-horizontal-1280px;
+  }
+
+  @media screen and (max-width: 1010px) {
+    padding: 20px $padding-horizontal-1280px;
+  }
+
+  @media screen and (max-width: 650px) {
+    padding: 20px $padding-horizontal-650px;
+  }
+
+  @media screen and (max-width: 340px) {
+    padding: 20px $padding-horizontal-340px;
+  }
+}

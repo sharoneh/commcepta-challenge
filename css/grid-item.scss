@@ -1,0 +1,152 @@
+main .grid .grid-item {
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+  align-items: center;
+  display: flex;
+  padding: 30px;
+  
+  &.highlight-box {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    cursor: default;
+    position: relative;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      
+      &.labels {
+        margin-left: 30px;
+
+        span {
+          font-size: 16px;
+          text-transform: uppercase;
+          color: $grey;
+          text-align: right;
+          line-height: 25px;
+
+          @media screen and (max-width: 750px) {
+            font-size: 14px;
+          }
+        }
+      }
+
+      &.values {
+        margin-left: 16px;
+
+        span {
+          font-size: 20px;
+          font-weight: 600;
+          color: $dark-blue;
+          line-height: 25px;
+
+          @media screen and (max-width: 750px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 420px) {
+      .image {
+        position: absolute;
+        top: 20px;
+      }
+
+      .labels, .values {
+        margin-top: 120px;
+      }
+
+      div.labels {
+        margin-left: 0;
+
+        span {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .image {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+
+    .number {
+      background-color: $light-green;
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: right;
+
+      span {
+        color: $dark-blue;
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    font-size: 12px;
+    
+    span {
+      text-align: left;
+
+      &.name {
+        font-size: 20px;
+        font-weight: 600;
+        color: $dark-blue;
+      }
+
+      &.position {
+        font-size: 16px;
+        color: $grey;
+      }
+      
+      @media screen and (max-width: 1010px) {
+        &.name {
+          font-size: 16px;
+        }
+
+        &.position {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &.box {
+    cursor: pointer;
+
+    &:hover, &.active {
+      background-color: $blue;
+      transition-duration: .5s;
+
+      .content span {
+        color: white;
+        transition-duration: .5s;
+      }
+    }
+
+    @media screen and (max-width: 1100px) {
+      .image {
+        height: 70px;
+        width: 70px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    padding: 20px;
+  }
+}
