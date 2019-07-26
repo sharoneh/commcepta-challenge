@@ -14,10 +14,6 @@ main {
 
     @media screen and (max-width: 950px) {
       grid-template-columns: 1fr;
-
-      .grid-item.highlight-box {
-        grid-column-end: auto;
-      }
     }
   }
 

@@ -66,6 +66,10 @@ main .grid .grid-item {
         }
       }
     }
+
+    @media screen and (max-width: 950px) {
+      grid-column-end: auto;
+    }
   }
 
   .image {

@@ -1,0 +1,73 @@
+header {
+  background-image: linear-gradient(to right, $light-green, $dark-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 0 $padding-horizontal-1920px;
+  position: relative;
+  overflow: hidden;
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  div.logo, div.logo div {
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid $blue;
+
+    @media screen and (max-width: 750px) {
+      height: unset;
+    }
+
+    div {
+      width: 100%;
+      border: none;
+      padding: 0 14px;
+
+      span {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 30px;
+
+        @media screen and (max-width: 750px) {
+          font-size: 20px;
+        }
+      }
+
+      @media screen and (max-width: 750px) {
+        padding: 10px;
+      }
+
+      &:first-child {
+        span {
+          color: $blue;
+        }
+      }
+
+      &:last-child {
+        background-color: $blue;
+
+        span {
+          color: #3ca1a1;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1480px) {
+    padding: 0 $padding-horizontal-1280px;
+  }
+
+  @media screen and (max-width: 650px) {
+    padding: 0 $padding-horizontal-650px;
+  }
+
+  @media screen and (max-width: 340px) {
+    padding: 0 $padding-horizontal-340px;
+  }
+}
