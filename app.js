@@ -37,7 +37,7 @@ loadJSON(response => {
       </div>`
     }
 
-    html += `<button class="grid-item box" id="${item.id}">
+    html += `<button class="grid-item box${index === 0 ? ' active' : ''}" id="${item.id}">
       <div class="image" style="background-image: url(images/${item.foto});">
         <div class="number">
           <span>${item.id}</span>
@@ -57,6 +57,14 @@ loadJSON(response => {
   
   boxes.forEach(box => {
     box.addEventListener('click', () => {
+      // ativação visual dos itens da grid
+      if (!box.classList.contains('active')) {
+        const activeBox = document.querySelector('.active')
+        activeBox && activeBox.classList.remove('active')
+  
+        box.classList.add('active')
+      }
+
       // buscar dados no .json pelo id
       const boxId = parseInt(box.getAttribute('id'))
       const dataItem = data.find(item => item.id === boxId)
@@ -72,14 +80,6 @@ loadJSON(response => {
       valuesElements.forEach((element, index) => {
         element.innerHTML = values[index]
       })
-
-      // ativação visual dos itens da grid
-      if (!box.classList.contains('active')) {
-        const activeBox = document.querySelector('.active')
-        activeBox && activeBox.classList.remove('active')
-  
-        box.classList.add('active')
-      }
     })
   })
 })
