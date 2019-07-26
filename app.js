@@ -83,3 +83,18 @@ loadJSON(response => {
     })
   })
 })
+
+// botão de menu para telas menores
+const navButton = document.querySelector('.nav-button')
+const nav = document.querySelector('nav')
+
+navButton.addEventListener('click', () => {
+  nav.classList.add('active')
+})
+
+// botão para fechar menu em telas menores
+const closeNavBtn = document.querySelector('button.close-nav')
+
+closeNavBtn.addEventListener('click', () => {
+  nav.classList.remove('active')
+})

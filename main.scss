@@ -24,6 +24,7 @@ main {
         grid-column-start: 1;
         grid-column-end: 4;
         cursor: default;
+        position: relative;
 
         div {
           display: flex;
@@ -57,6 +58,25 @@ main {
               @media screen and (max-width: 750px) {
                 font-size: 16px;
               }
+            }
+          }
+        }
+
+        @media screen and (max-width: 420px) {
+          .image {
+            position: absolute;
+            top: 20px;
+          }
+
+          .labels, .values {
+            margin-top: 120px;
+          }
+
+          div.labels {
+            margin-left: 0;
+
+            span {
+              text-align: left;
             }
           }
         }
@@ -164,5 +184,9 @@ main {
 
   @media screen and (max-width: 650px) {
     padding: 20px $padding-horizontal-650px;
+  }
+
+  @media screen and (max-width: 340px) {
+    padding: 20px $padding-horizontal-340px;
   }
 }
