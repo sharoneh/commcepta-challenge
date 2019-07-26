@@ -8,42 +8,42 @@
   },
   { 
     "id": 2,
-    "foto": "foto-bruno.jpg",
+    "foto": "foto-bruno.png",
     "nome": "Bruno",
     "cargo": "Diretor",
     "idade": 21 
   },
   { 
     "id": 3,
-    "foto": "foto-helena.jpg",
+    "foto": "foto-helena.png",
     "nome": "Helena",
     "cargo": "Gerente",
     "idade": 22
   },
   { 
     "id": 4,
-    "foto": "foto-fernanda.jpg",
+    "foto": "foto-fernanda.png",
     "nome": "Fernanda",
     "cargo": "Desenvolvedor",
     "idade": 23
   },
   { 
     "id": 5,
-    "foto": "foto-diego.jpg",
+    "foto": "foto-diego.png",
     "nome": "Diego",
     "cargo": "Desenvolvedor",
     "idade": 24
   },
   { 
     "id": 6,
-    "foto": "foto-iris.jpg",
+    "foto": "foto-iris.png",
     "nome": "Iris",
     "cargo": "Desenvolvedor",
     "idade": 25 
   },
   { 
     "id": 7,
-    "foto": "foto-hugo.jpg",
+    "foto": "foto-hugo.png",
     "nome": "Hugo",
     "cargo": "Desenvolvedor",
     "idade": 26 
@@ -57,7 +57,7 @@
   },
   { 
     "id": 9,
-    "foto": "foto-gabriel.jpg",
+    "foto": "foto-gabriel.png",
     "nome": "Gabriel",
     "cargo": "Desenvolvedor",
     "idade": 28
