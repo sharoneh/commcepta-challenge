@@ -10,10 +10,10 @@ $light-grey: #d9d9d9;
 $grey: #092432;
 $blue: #002b50;
 
-$padding-horizontal-1920px: 255px;
-$padding-horizontal-1280px: 100px;
-$padding-horizontal-650px: 50px;
-$padding-horizontal-340px: 20px;
+$padding1: 255px;
+$padding2: 100px;
+$padding3: 50px;
+$padding4: 20px;
 
 $breakpoint1: 1480px;
 $breakpoint2: 1280px;
@@ -24,6 +24,19 @@ $breakpoint6: 650px;
 $breakpoint7: 520px;
 $breakpoint8: 420px;
 $breakpoint9: 340px;
+
+@function calcPadding($screenWidth) {
+  @if ($screenWidth > $breakpoint1) {
+    @return 255px;
+  } 
+  @if ($screenWidth > $breakpoint6) {
+    @return 50px;
+  }
+  @if ($screenWidth < $breakpoint3) {
+    @return 100px;
+  }
+  @return 255px;
+}
 
 html, body {
   box-sizing: border-box;

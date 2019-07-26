@@ -1,7 +1,7 @@
 main {
   min-height: 100%;
   background-image: linear-gradient($light-grey, white);
-  padding: 30px $padding-horizontal-1920px;
+  padding: 30px $padding1;
   
   .grid {
     display: grid;
@@ -18,18 +18,18 @@ main {
   }
 
   @media screen and (max-width: $breakpoint1) {
-    padding: 30px $padding-horizontal-1280px;
+    padding: 30px $padding2;
   }
 
   @media screen and (max-width: $breakpoint3) {
-    padding: 20px $padding-horizontal-1280px;
+    padding: 20px $padding2;
   }
 
   @media screen and (max-width: $breakpoint6) {
-    padding: 20px $padding-horizontal-650px;
+    padding: 20px $padding3;
   }
 
   @media screen and (max-width: $breakpoint9) {
-    padding: 20px $padding-horizontal-340px;
+    padding: 20px $padding4;
   }
 }

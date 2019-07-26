@@ -4,7 +4,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 120px;
-  padding: 0 $padding-horizontal-1920px;
+  padding: 0 $padding1;
   position: relative;
   overflow: hidden;
   
@@ -60,14 +60,14 @@ header {
   }
 
   @media screen and (max-width: $breakpoint1) {
-    padding: 0 $padding-horizontal-1280px;
+    padding: 0 $padding2;
   }
 
   @media screen and (max-width: $breakpoint6) {
-    padding: 0 $padding-horizontal-650px;
+    padding: 0 $padding3;
   }
 
   @media screen and (max-width: $breakpoint9) {
-    padding: 0 $padding-horizontal-340px;
+    padding: 0 $padding4;
   }
 }

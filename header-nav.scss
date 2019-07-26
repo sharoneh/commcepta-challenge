@@ -83,14 +83,14 @@ header {
       }
   
       &.active {
-        right: $padding-horizontal-650px;
+        right: $padding3;
         transition-duration: .5s;
       }
     }
     
     @media screen and (max-width: $breakpoint9) {
       &.active {
-        right: $padding-horizontal-340px;
+        right: $padding4;
       }
     }
   }
