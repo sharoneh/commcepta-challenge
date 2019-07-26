@@ -11,6 +11,15 @@ const loadJSON = (callback) => {
   xobj.send(null);  
 }
 
+const fadeAnimation = (element, fade) => element.animate([
+  // if (fade === true) fadeOut; else fadeIn
+  { opacity: fade ? 1 : 0 },
+  { opacity: fade ? 0 : 1 }
+], {
+  duration: 500,
+  iterations: 1
+})
+
 // inserção dinâmica dos itens da grid de acordo com o arquivo dados.json
 loadJSON(response => {
   const data = JSON.parse(response)
@@ -69,17 +78,31 @@ loadJSON(response => {
       const boxId = parseInt(box.getAttribute('id'))
       const dataItem = data.find(item => item.id === boxId)
 
-      // alterar a imagem do box
       const image = document.querySelector('.highlight-box .image')
+      const valuesElements = document.querySelectorAll('.values span')
+
+      const labelsEl = document.querySelector('.labels')
+      const valuesEl = document.querySelector('.values')
+      
+      // animação: fade out
+      fadeAnimation(image, true)
+      fadeAnimation(labelsEl, true)
+      fadeAnimation(valuesEl, true)
+      
+      // alterar a imagem do box
       image.setAttribute('style', `background-image: url(images/${dataItem.foto});`)
 
       // alterar os dados
-      const valuesElements = document.querySelectorAll('.values span')
       const values = [dataItem.nome, dataItem.cargo, dataItem.idade]
-      
+
       valuesElements.forEach((element, index) => {
         element.innerHTML = values[index]
       })
+
+      // animação: fade in
+      fadeAnimation(image, false)
+      fadeAnimation(labelsEl, false)
+      fadeAnimation(valuesEl, false)
     })
   })
 })
