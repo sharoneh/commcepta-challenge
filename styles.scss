@@ -24,6 +24,7 @@ $breakpoint6: 650px;
 $breakpoint7: 520px;
 $breakpoint8: 420px;
 $breakpoint9: 340px;
+$breakpoint10: 1675px;
 
 @function calcPadding($screenWidth) {
   @if ($screenWidth > $breakpoint1) {

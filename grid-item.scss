@@ -20,11 +20,16 @@ main .grid .grid-item {
         margin-left: 30px;
 
         span {
-          font-size: 16px;
+          font-size: 20px;
           text-transform: uppercase;
           color: $grey;
           text-align: right;
-          line-height: 25px;
+          line-height: 35px;
+          
+          @media screen and (max-width: $breakpoint10) {
+            font-size: 16px;
+            line-height: 25px;
+          }
 
           @media screen and (max-width: $breakpoint5) {
             font-size: 14px;
@@ -36,10 +41,15 @@ main .grid .grid-item {
         margin-left: 16px;
 
         span {
-          font-size: 20px;
+          font-size: 24px;
           font-weight: 600;
           color: $dark-blue;
-          line-height: 25px;
+          line-height: 35px;
+          
+          @media screen and (max-width: $breakpoint10) {
+            font-size: 20px;
+            line-height: 25px;
+          }
 
           @media screen and (max-width: $breakpoint5) {
             font-size: 16px;
@@ -73,16 +83,21 @@ main .grid .grid-item {
   }
 
   .image {
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 140px;
     background-size: cover;
     background-position: center center;
     border-radius: 50%;
+    
+    @media screen and (max-width: $breakpoint10) {
+      height: 100px;
+      width: 100px;
+    }
 
     .number {
       background-color: $light-green;
-      height: 25px;
-      width: 25px;
+      height: 40px;
+      width: 40px;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -92,7 +107,16 @@ main .grid .grid-item {
       span {
         color: $dark-blue;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: $breakpoint10) {
+        height: 25px;
+        width: 25px;
+
+        span {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -107,14 +131,24 @@ main .grid .grid-item {
       text-align: left;
 
       &.name {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 600;
         color: $dark-blue;
       }
 
       &.position {
-        font-size: 16px;
+        font-size: 20px;
         color: $grey;
+      }
+
+      @media screen and (max-width: $breakpoint10) {
+        &.name {
+          font-size: 20px;
+        }
+  
+        &.position {
+          font-size: 16px;
+        }
       }
       
       @media screen and (max-width: $breakpoint3) {
