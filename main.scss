@@ -8,28 +8,28 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
 
-    @media screen and (max-width: 1010px) {
+    @media screen and (max-width: $breakpoint3) {
       grid-gap: 20px;
     }
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: $breakpoint4) {
       grid-template-columns: 1fr;
     }
   }
 
-  @media screen and (max-width: 1480px) {
+  @media screen and (max-width: $breakpoint1) {
     padding: 30px $padding-horizontal-1280px;
   }
 
-  @media screen and (max-width: 1010px) {
+  @media screen and (max-width: $breakpoint3) {
     padding: 20px $padding-horizontal-1280px;
   }
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: $breakpoint6) {
     padding: 20px $padding-horizontal-650px;
   }
 
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: $breakpoint9) {
     padding: 20px $padding-horizontal-340px;
   }
 }

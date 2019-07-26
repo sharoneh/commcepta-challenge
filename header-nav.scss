@@ -9,7 +9,7 @@ header {
     padding: 0;
     background-color: transparent;
   
-    @media screen and (max-width: 520px) {
+    @media screen and (max-width: $breakpoint7) {
       display: flex;
     }
   
@@ -29,7 +29,7 @@ header {
         margin-right: 0;
       }
       
-      @media screen and (max-width: 950px) {
+      @media screen and (max-width: $breakpoint4) {
         font-size: 14px;
         margin: 0 15px;
   
@@ -38,7 +38,7 @@ header {
         }
       }
   
-      @media screen and (max-width: 750px) {
+      @media screen and (max-width: $breakpoint5) {
         font-size: 12px;
         margin: 0 10px;
   
@@ -52,7 +52,7 @@ header {
       display: none;
     }
   
-    @media screen and (max-width: 520px) {
+    @media screen and (max-width: $breakpoint7) {
       position: absolute;
       background-color: white;
       right: -130px;
@@ -88,7 +88,7 @@ header {
       }
     }
     
-    @media screen and (max-width: 340px) {
+    @media screen and (max-width: $breakpoint9) {
       &.active {
         right: $padding-horizontal-340px;
       }

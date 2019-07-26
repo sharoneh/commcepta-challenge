@@ -20,7 +20,7 @@ header {
     align-items: center;
     border: 5px solid $blue;
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: $breakpoint5) {
       height: unset;
     }
 
@@ -34,12 +34,12 @@ header {
         font-weight: 800;
         font-size: 30px;
 
-        @media screen and (max-width: 750px) {
+        @media screen and (max-width: $breakpoint5) {
           font-size: 20px;
         }
       }
 
-      @media screen and (max-width: 750px) {
+      @media screen and (max-width: $breakpoint5) {
         padding: 10px;
       }
 
@@ -59,15 +59,15 @@ header {
     }
   }
 
-  @media screen and (max-width: 1480px) {
+  @media screen and (max-width: $breakpoint1) {
     padding: 0 $padding-horizontal-1280px;
   }
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: $breakpoint6) {
     padding: 0 $padding-horizontal-650px;
   }
 
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: $breakpoint9) {
     padding: 0 $padding-horizontal-340px;
   }
 }

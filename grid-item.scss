@@ -26,7 +26,7 @@ main .grid .grid-item {
           text-align: right;
           line-height: 25px;
 
-          @media screen and (max-width: 750px) {
+          @media screen and (max-width: $breakpoint5) {
             font-size: 14px;
           }
         }
@@ -41,14 +41,14 @@ main .grid .grid-item {
           color: $dark-blue;
           line-height: 25px;
 
-          @media screen and (max-width: 750px) {
+          @media screen and (max-width: $breakpoint5) {
             font-size: 16px;
           }
         }
       }
     }
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: $breakpoint8) {
       .image {
         position: absolute;
         top: 20px;
@@ -67,7 +67,7 @@ main .grid .grid-item {
       }
     }
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: $breakpoint4) {
       grid-column-end: auto;
     }
   }
@@ -117,7 +117,7 @@ main .grid .grid-item {
         color: $grey;
       }
       
-      @media screen and (max-width: 1010px) {
+      @media screen and (max-width: $breakpoint3) {
         &.name {
           font-size: 16px;
         }
@@ -150,7 +150,7 @@ main .grid .grid-item {
     }
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: $breakpoint2) {
     padding: 20px;
   }
 }
