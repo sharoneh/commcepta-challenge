@@ -1,12 +1,8 @@
 main {
-  height: 100%;
+  min-height: 100%;
   background-image: linear-gradient($light-grey, white);
-  padding: 30px $padding-horizontal-1920px 50px;
+  padding: 30px $padding-horizontal-1920px;
   
-  @media screen and (max-width: 1280px) {
-    padding: 30px $padding-horizontal-1280px 50px;
-  }
-
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -16,9 +12,13 @@ main {
       cursor: pointer;
       background-color: white;
       box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
-      padding: 20px;
       align-items: center;
       display: flex;
+      padding: 30px;
+      
+      @media screen and (max-width: 1280px) {
+        padding: 20px;
+      }
 
       &.highlight-box {
         grid-column-start: 1;
@@ -38,6 +38,10 @@ main {
               color: $grey;
               text-align: right;
               line-height: 25px;
+
+              @media screen and (max-width: 750px) {
+                font-size: 14px;
+              }
             }
           }
 
@@ -49,6 +53,10 @@ main {
               font-weight: 600;
               color: $dark-blue;
               line-height: 25px;
+
+              @media screen and (max-width: 750px) {
+                font-size: 16px;
+              }
             }
           }
         }
@@ -98,6 +106,16 @@ main {
             font-size: 16px;
             color: $grey;
           }
+          
+          @media screen and (max-width: 1010px) {
+            &.name {
+              font-size: 16px;
+            }
+  
+            &.position {
+              font-size: 14px;
+            }
+          }
         }
       }
 
@@ -113,7 +131,38 @@ main {
             transition-duration: .5s;
           }
         }
+
+        @media screen and (max-width: 1100px) {
+          .image {
+            height: 70px;
+            width: 70px;
+          }
+        }
       }
     }
+
+    @media screen and (max-width: 1010px) {
+      grid-gap: 20px;
+    }
+
+    @media screen and (max-width: 950px) {
+      grid-template-columns: 1fr;
+
+      .grid-item.highlight-box {
+        grid-column-end: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1480px) {
+    padding: 30px $padding-horizontal-1280px;
+  }
+
+  @media screen and (max-width: 1010px) {
+    padding: 20px $padding-horizontal-1280px;
+  }
+
+  @media screen and (max-width: 650px) {
+    padding: 20px $padding-horizontal-650px;
   }
 }

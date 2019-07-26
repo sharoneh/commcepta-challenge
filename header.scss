@@ -6,31 +6,39 @@ header {
   height: 120px;
   padding: 0 $padding-horizontal-1920px;
   
-  @media screen and (max-width: 1280px) {
-    padding: 0 $padding-horizontal-1280px;
-  }
-  
   a {
     color: white;
     text-decoration: none;
   }
   
-  div {
+  div.logo, div.logo div {
     height: 66px;
-    width: 225px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 5px solid $blue;
 
+    @media screen and (max-width: 750px) {
+      height: unset;
+    }
+
     div {
       width: 100%;
       border: none;
+      padding: 0 14px;
 
       span {
         text-transform: uppercase;
         font-weight: 800;
         font-size: 30px;
+
+        @media screen and (max-width: 750px) {
+          font-size: 20px;
+        }
+      }
+
+      @media screen and (max-width: 750px) {
+        padding: 10px;
       }
 
       &:first-child {
@@ -53,6 +61,40 @@ header {
     a {
       margin: 0 30px;
       text-transform: uppercase;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      
+      @media screen and (max-width: 950px) {
+        font-size: 14px;
+        margin: 0 15px;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      @media screen and (max-width: 750px) {
+        font-size: 12px;
+        margin: 0 10px;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
+
+    @media screen and (max-width: 520px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1480px) {
+    padding: 0 $padding-horizontal-1280px;
+  }
+
+  @media screen and (max-width: 650px) {
+    padding: 0 $padding-horizontal-650px;
   }
 }
